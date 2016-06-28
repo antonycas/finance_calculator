@@ -566,6 +566,204 @@ function currentYield() {
 }
 
 
+/*
+
+	1. Functions - D - F
+
+	D:
+
+		A - Days in Inventory 									(done)
+			A.i - Inventory Turnover 							(done)
+			A.ii - Inventory Days 								(done)
+		B - Debt Coverage Ratio 								(done)
+		C - Debt Ratio 											(done)
+		D - Debt to Equity Ratio 								(done)
+		E - Debt to Income Ratio (D/I) 							(done)
+		F - Diluted Earnings Per Share 							(done)
+		G - Discounted Payback Period
+		H - Dividend Payout Ratio 								(done)
+		J - Dividend Yield - Stock 								(done)
+		K - Dividends Per Share 								(done)
+		L - Doubling Time
+		M - Doubling Time - Cont. Compounding
+		N - Doubling Time - Simple Interest
+
+	E:
+			
+		A - Earnings Per Share 									(done)
+		B - Equity multiplier 									(done)
+		C -	Equivalent Annual Annuity
+		D - Estimated Earnings 									(done)
+
+	F:
+
+		A - Free Cash Flow to Equity (FCFE)
+		B - Free Cash Flow to Firm (FCFF)
+		C - Future Value
+		D - FV - Continuous Compounding
+		E - Future Value Factor
+
+*/
+
+
+
+							/*****************
+
+									D
+
+							******************/
+
+
+
+
+
+//	A - Days in inventory
+//	inventory days = 365/turnover
+
+function  daysInInventory(inventoryTurnover) {
+	result = 365 / inventoryTurnover;
+	return result;
+}
+
+
+// A.ii
+// inventory turnover = cost of goods sold / inventory;
+
+function inventoryTurnover(costOfGoodsSold, inventory){
+	result = costOfGoodsSold / inventory;
+	return result;
+}
+
+console.log(inventoryTurnover(1,1));
+
+
+// A.ii
+// inventory days = 365 * (average inventory / cost goods sold)
+// 													     ^
+//													not a typo	
+
+function inventoryDays(avgInventory, costGoodsSold) {
+	
+	result = 365 * (avgInventory / costGoodsSold);
+	return result;
+}
+
+
+//	B - Debt Coverage Ratio
+//	debtCovarageRatio = net operating income / debt service
+
+function debtCovarageRatio (netOperatingIncome, debtServices) {
+
+	result = netOperatingIncome / debtServices;
+	return result;
+}
+
+//	C - Debt Ratio
+//	debt ratio = total liabilities / total assets
+
+
+function debtRatio (totalLiabilities, totalAssets) {
+
+	result = totalLiabilities / totalAssets;
+	return result;
+}
+
+console.log(debtRatio(1, 1))
+
+
+//	D - Debt to equity ratio
+//	debt to equity = total liabilities / total equity
+
+function  debtToEquity(totalLiabilities, totalEquity) {
+	result = totalLiabilities / totalEquity;
+	return result;
+}
+
+console.log(debtToEquity(1,1));
+
+
+//	E - Debt to income ratio
+//	debt to income =  monthly debt payments / gross monthly income
+
+function  debtToIncome(monthlyDebtPayments, grossMonthlyIncome) {
+	result = monthlyDebtPayments / grossMonthlyIncome;
+	return result;
+}
+
+console.log(debtToIncome(1,1));
+
+
+//	F - Diluted earnings per share 
+// 	diluted EPS = net income / (avg shares + other convertible instruments)
+
+function dilutedEarningsPerShare (netIncome, avgShares, otherConvertibleInstruments) {
+	result = netIncome / (avgShares + otherConvertibleInstruments);
+	return result;
+}
+
+//	H - Dividend payout ratio
+// dividend payout ratio = dividends / net income
+
+function dividentPayoutRatio (dividends, netIncome) {
+	result = dividends / netIncome;
+	return result;
+}
+
+// J - Dividend Yield 
+// dividend yield = d / p
+// d = Dividends for the period
+//	p = Initial price for the period
+
+function dividendYield (d,p) {
+	result = d / p;
+	return result;
+}
+
+console.log(dividendYield(1,1));
+
+
+//	K -  Dividends per share
+//  dividends per share = dividends / number of shares 
+
+function dividendsPerShare (dividends, numberOfShares) {
+	result = dividends / numberOfShares;
+	return result;
+}
+
+
+									/*******
+
+											E
+
+									*******/
+
+//	A - Earnings per share
+//	eps = net income / weighted avg outstanding shares
+
+function earningsPerShare(netIncome, weightedAvgOutstandingShares) {
+	result = netIncome / weightedAvgOutstandingShares;
+	return result;
+}
+
+
+//	B - Equity Multiplier
+//	equity multiplier = total assets / stockholders equity
+
+function equityMultiplier(totalAssets, stockholdersEquity) {
+	result = totalAssets / stockholdersEquity;
+	return result;
+}
+
+// D - Estimated Earnings
+// estimated earnings = forecast sales - forecast expenses
+
+function estimatedEarnings (forecastSales, forcastExpenses) {
+	result = forecastSales - forcastExpenses;
+	return result;
+}
+
+
+
 //=========================
 //	functions G-I
 //=========================
