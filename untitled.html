@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="javascript/finance_functions.js"></script>
+  </head>
+  <body class="container-fluid">  
+  	 
+	  	<div id="calculator_container" class="row">
+
+	  		<h1>Finance Calculator</h1>
+
+		  	<select id="function_select" class="row">
+		  		<option value="annualPercentageYield()">Annual Percentage Yield</option>
+		  		<option value="futureValueOfAnnuity()">Future Value of Annuity</option>
+		  		<option value="annuitySolveForN()">Annuity Solve for n</option>
+		  		<option value="annuityPaymentPv()">Annuity Payment Pv</option>
+		  		<option value="annuityPaymentFv()">Annuity Payment Fv</option>
+		  		<option value="annuityPaymentFactorPv()">Annuity Payment Factor Pv</option>
+		  		<option value="presentValueOfAnnuity()">Present Value of Annuity</option>
+		  		<option value="annuityPvSolveForN()">Annuity (PV)- Solve for n(NOT WORKING)</option>
+		  		<option value="presentValueAnnuityFactor()">Present Value Annuity Factor(?????)</option>
+		  		<option value="presentValueOfAnnuityDue()">Present Value of Annuity Due(NOT WORKING)</option>
+		  		<option value="futureValueOfAnnuityDue()">Future Value of Annuity Due</option>
+		  		<option value="annuityDuePaymentPv()">Annuity Due Payment - PV</option>
+		  		<option value="annuityDuePaymentFv()">Annuity Due Payment - FV</option>
+		  		<option value="assetToSalesRatio()">Asset to Sales Ratio</option>
+		  		<option value="averageCollectionPeriod()">Average Collection Period</option>
+		  		<option value="paymentsOnABalloonLoan()">Payments on a Balloon Loan(NOT WORKING)</option>
+		  		<option value="bidAskSpread()">Bid-Ask Spread</option>
+		  		<option value="bondEquivalentYield()">Bond Equivalent Yield(NOT WORKING)</option>
+		  		<option value="bookValuePerShare()">Book Value per Share</option>
+		  		<option value="capitalAssetPricingModel()">Capital Asset Pricing Model</option>
+		  		<option value="capitalGainsYield()">Capital Gains Yield</option>
+		  		<option value="compoundInterest()">Compound Interest</option>
+		  		<option value="continuousCompounding()">Continuous Compounding</option>
+		  		<option value="contributionMargin()">Contribution Margin</option>
+		  		<option value="currentRatio()">Current Ratio</option>
+		  		<option value="currentYield()">Current Yield</option>
+		  		<option value="futureValueOfGrowingAnnuity()">Future Value of Growing Annuity</option>
+		  		<option value="growingAnnuityPaymentPv()">Growing Annuity Payment - PV</option>
+		  		<option value="growingAnnuityPaymentFv()">Growing Annuity Payment - FV</option>
+		  		<option value="presentValueOfAGrowingAnnuity()">Present Value of a Growing Annuity</option>
+		  		<option value="presentValueOfAGrowingPerpetuity()">Present Value of Growing Perpetuity</option>
+		  		<option value="interestCoverageRatio()">Interest Coverage Ratio</option>
+		  		<option value="inventoryTurnoverRatio()">Inventory Turnover Ratio</option>
+		  		<option value="netAssetValue()">Net Asset Value</option>
+		  		<option value="netProfitMargin()">Net Profit Margin</option>
+		  		<option value="netWorkingCapital()">Net Working Capital</option>
+		  		<option value="solveForNumberOfPeriodsPvFv()">Solver for Number of Periods - PV &amp; FV(NOT WORKING)</option>
+		  		<option value="paybackPeriod()">Payback Period</option>
+		  		<option value="pvOfPerpetuity()">Pv of Perpetuity</option>
+		  		<option value="preferredStockValue()">Preferred Stock Value</option>
+		  		<option value="presentValue()">Present Value</option>
+		  		<option value="pvContinuousCompounding()">PV - Continuous Compounding</option>
+		  		<option value="presentValueFactor()">Present Value factor</option>
+		  		<option value="priceToBookValue()">Price to Book Value</option>
+		  		<option value="priceToEarningsRatio()">Price to Earnings Ratio</option>
+		  		<option value="priceToSalesRatio()">Price to Sales Ratio</option>
+		  		<option value="taxEquivalentYield()">Tax Equivalent Yield</option>
+		  		<option value="totalStockReturn()">Total Stock Return(NOT WORKING)</option>
+		  	</select>
+		  	<div id="inputs" class=""></div>
+		  	<button id="calculate_button" class="btn btn-primary" onclick="">Calculate</button>
+		  	<input type="text" name="result" placeholder="result" id="result">
+	  	</div>
+	
+
+  </body>
+</html>
